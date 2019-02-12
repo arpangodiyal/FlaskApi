@@ -29,8 +29,8 @@ lis.append(dicto)
 
 
 for song in allSongs:
-    name = song["data-artist"]
-    artist = song["data-title"]
+    artist = song["data-artist"]
+    song_name = song["data-title"]
     rank = song["data-rank"]
     lyrics_url = ''
 
@@ -42,7 +42,7 @@ for song in allSongs:
     # print(artist)
     # print(lyrics_url)
     # print()
-    dicto = {"Rank":rank, "SongName":name, "Artist":artist, "LyricsUrl":lyrics_url}
+    dicto = {"Rank":rank, "SongName":song_name, "Artist":artist, "LyricsUrl":lyrics_url}
     lis.append(dicto)
 
 #print(lis)
